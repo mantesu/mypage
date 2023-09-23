@@ -46,6 +46,17 @@
         .mytitle > button:hover {
             border: 2px solid white;
         }
+        .ppp{
+
+            width: 600px;
+            margin: 70px auto 70px auto;
+             align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+
+
+        }
 
         .mycomment {
             color: grey;
@@ -72,14 +83,33 @@
         }
         .mybtn > button{
             margin-right: 10px;
-            
+
+        }
+        .login{
+
+            width: 500px;
+            margin: 50px auto 50px auto;
+        }
+
+        .mybtnbtn{
+            background-color: aqua;
+            margin: 20px auto 30px auto;
+            width: 300px;
+            height: 40px;
+             border-radius: 30px;
+            color: black;
+
+ display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
 
 <body>
 <div class="mytitle">
-    <h1>ここで変更できます</h1>
+    <h1>人生最高の映画</h1>
     <button>映画記録</button>
 </div>
 <div class="mypost">
@@ -87,6 +117,17 @@
         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
         <label for="floatingInput">映画URL</label>
     </div>
+    <div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">採点</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option>選択する</option>
+    <option value="1">⭐</option>
+    <option value="2">⭐⭐</option>
+    <option value="3">⭐⭐⭐</option>
+      <option value="４">⭐⭐⭐⭐</option>
+      <option value="５">⭐⭐⭐⭐⭐</option>
+  </select>
+</div>
     <div class="form-floating">
         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
         <label for="floatingTextarea">コメント</label>
@@ -101,57 +142,71 @@
     <div class="row row-cols-1 row-cols-md-4 g-4">
         <div class="col">
             <div class="card">
-                <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                <img src="https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqGzsxBwiJiVraNgd7o60HjQ1jV5HbZCVyB9cgjt9m79rJqEQsqVxBS2t6XmdK-O5Pm92Fdju7-xucXTa6NZMx56E-uO3n1vC_xyBK61asnWgImsAIT-x6idrWsefTEtGOVY_kXR83oqH4tl8tAlsxCb67QyyGUB-raDc87cXhvPjLT6zg1CgmlJbRvlPqHk6L1wQm3LXoXA35pNR1Uc0fhvpoTj5b248QHvoPxkP7eKfM7Gtgbm0UbmRUwAclc1WQOBRSNB-tLPcShOMIedBzlUvLTzW5lryUO7B1zLe9ExKGYiINLitd9aG4STQ1pf3ARdOidKOKr9YQfxF-zpcODSn1VgFSP-UNpCLBIHl1jJ3AyMHZRAOP1I1cFXK9mbKgFA==/20230707_181555_p_o_40226172.jpg"
                      class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">ここに映画のタイトルが入ります。</h5>
-                    <p class="card-text">ここに映画の説明が入ります。</p>
+                    <h5 class="card-title">君たちはどう生きるか</h5>
+                    <p class="card-text">母親を火事で失った少年・眞人（まひと）は父の勝一とともに東京を離れ、「青鷺屋敷」と呼ばれる広大なお屋敷に引っ越してくる。亡き母の妹であり、新たな母親になった夏子に対して複雑な感情を抱き、転校先の学校でも孤立した日々を送る眞人。そんな彼の前にある日、鳥と人間の姿を行き来する不思議な青サギが現れる。その青サギに導かれ、眞人は生と死が渾然一体となった世界に迷い込んでいく。</p>
                     <p>⭐⭐⭐</p>
-                    <p class="mycomment">ここにコメントが入ります。</p>
+                    <p class="mycomment">難しい内容ではあったが色々考えさせられる内容だった。</p>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                <img src="https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqG48a1HGKn6I9Oc3IR0D7FBHLfbCmk-vHMD8Emr70M7lNPuPKcahGVWz2ahZTvNrLN4zhxsP6k93o4GndY8gDv8cg_WWNgv4bvb2bO05yE7meZ313Wu1f_PLx36zt32XFg6PCyhegI00RTxCVaIG3YQ77t-Aj13bFotQATqutokRwkSzRtGYhZaBYdjWXAljoBztpqUvk0e4SNlyDjK_mbKdF9gJsirIV2nzEL5RwFebVEYQ438KEpNid5Qyy1vsNU3ZA9DbiyiGkQjI5LLyGVGk=/320.jpg?errorImage=false"
                      class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">ここに映画のタイトルが入ります。</h5>
-                    <p class="card-text">ここに映画の説明が入ります。</p>
+                    <h5 class="card-title">ミステリという勿れ</h5>
+                    <p class="card-text">天然パーマでおしゃべりな大学生・久能整は、美術展のために広島を訪れていた。そこで、犬童我路の知り合いだという一人の女子高生・狩集汐路と出会う。「バイトしませんか。お金と命がかかっている。マジです。」そう言って汐路は、とあるバイトを整に持ちかける。それは、狩集家の莫大な遺産相続を巡るものだった。当主の孫にあたる、汐路、狩集理紀之助、波々壁新音、赤峰ゆらの4人の相続候補者たちと狩集家の顧問弁護士の孫・車坂朝晴は、遺言書に書かれた「それぞれの蔵においてあるべきものをあるべき所へ過不足なくせよ」というお題に従い、遺産を手にすべく、謎を解いていく。ただし先祖代々続く、この遺産相続はいわくつきで、その度に死人が出ている。汐路の父親も8年前に、他の候補者たちと自動車事故で死亡していたのだった……。次第に紐解かれていく遺産相続に隠された＜真実＞。そしてそこには世代を超えて受け継がれる一族の<闇と秘密>があったー。</p>
                     <p>⭐⭐⭐</p>
-                    <p class="mycomment">ここにコメントが入ります。</p>
+                    <p class="mycomment">最高</p>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                <img src="https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqGzTOC_LRu39yFwyz03Adf-3rVgLul_yGoQapeuHv_85v6O-ikd-Y22VGOPgT28rCrQ3MleY-qBWTzYMvS0d1J2J69hbbWpbXiq2OzvV_KPi0RpXI8zagw7M7s6pqkyURoEpFafQDlXzdKz8Z5kQ7scJBj5KViID9sDHcb7VYL_k-6EU_19vXUXiKhOzppAa7un9PMHmWmz3o3z6jGeMUE9YAGCjGPGfAyZ9pMYP8OnWm/hm_poster_payoff_b1_02_11fb6fe2.jpeg?errorImage=false"
                      class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">ここに映画のタイトルが入ります。</h5>
-                    <p class="card-text">ここに映画の説明が入ります。</p>
-                    <p>⭐⭐⭐</p>
-                    <p class="mycomment">ここにコメントが入ります。</p>
+                    <h5 class="card-title">ホーンテッドマンション</h5>
+                    <p class="card-text">ある親子が破格の条件で手に入れた、豪華すぎるマイホーム。だがそこは、999人のゴーストが住むという“呪われた館”だった。二人を救うため、かなりクセが強い4人の心霊エキスパート(超常現象専門家、歴史学者、霊媒師、神父)が集結。果たして、この館に秘められた謎とは何か……。</p>
+                    <p>⭐⭐</p>
+                    <p class="mycomment">怖すぎた</p>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                <img src="https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqG48a1HGKn6I9Oc3IR0D7FBHLfbCmk-vHMD8Emr70M7lNBcUSLqY8-KBxblGwToIyHCbQ5XiZSqVyKNxsetGbdK9tR2snc8gCMYiZ-dlSLH3vKdTqqAzuxjxSlA_jJry35aPCyhegI00RTxCVaIG3YQ77t-Aj13bFotQATqutokRwkSzRtGYhZaBYdjWXAljoB9eza2rpr478J-bWEzZKcYOqLcsxhulDwhE6e8n3IEvw69kMFzwO5wBVLyhwVwEj6PPZzbJWm0ZPaGOMFSGezGs=/320.jpg?errorImage=false"
                      class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">ここに映画のタイトルが入ります。</h5>
-                    <p class="card-text">ここに映画の説明が入ります。</p>
-                    <p>⭐⭐⭐</p>
-                    <p class="mycomment">ここにコメントが入ります。</p>
+                    <h5 class="card-title">名探偵コナン 黒鉄(くろがね)の魚影(サブマリン)</h5>
+                    <p class="card-text">劇場版『名探偵コナン』第26弾。 東京・八丈島近海に建設された、世界中の警察が持つ防犯カメラを繋ぐための海洋施設『パシフィック・ブイ』。本格稼働に向けて、ヨーロッパの警察組織・ユーロポールが管轄するネットワークと接続するため、世界各国のエンジニアが集結。そこでは顔認証システムを応用した、とある『新技術』のテストも進められていた。一方、園子の招待で八丈島にホエールウォッチングに来ていたコナンたち少年探偵団。するとコナンのもとへ沖矢昴(赤井秀一)から、ユーロポールの職員がドイツでジンに殺害された、という一本の電話が。不穏に思ったコナンは、『パシフィック・ブイ』の警備に向かっていた黒田兵衛たち警視庁関係者が乗る警備艇に忍び込み、施設内に潜入。すると、システム稼働に向け着々と準備が進められている施設内で、ひとりの女性エンジニアが黒ずくめの組織に誘拐される事件が発生。さらに彼女が持っていた、ある情報を記すUSB が組織の手に渡ってしまう。海中で不気味に唸るスクリュー音。そして八丈島に宿泊していた灰原のもとにも、黒い影が忍び寄りー。</p>
+                    <p>⭐⭐⭐⭐</p>
+                    <p class="mycomment">犯人は毛利小五郎</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="mypost">
+<h3 class="ppp">ＭＹページログイン <span class="badge bg-secondary"></span></h3>
+<form>
+  <div class="login">
+    <label for="exampleInputEmail1" class="form-label">メールアドレス</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">入力された内容は共有されません。</div>
+  </div>
+  <div class="login">
+    <label for="exampleInputPassword1" class="form-label">パスワード</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
 
-</div>
+ <div class="mybtnbtn">
+     <button type="submit" class="btn btn">ログイン</button>
+ </div>
+
+</form>
 </body>
 
 </html>
